@@ -48,8 +48,7 @@ class parking_lot(object):
 
 
 cont = True
-initial = input(">> ")
-if initial == "./parking_lot":
+if (initial := input(">> ")) == "./parking_lot":
     process = parking_lot()
     while(cont):
         com = input(">> ").split(' ')
